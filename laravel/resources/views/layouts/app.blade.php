@@ -13,7 +13,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- BOOTSTRAP -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/3d26c3c1d2.js" crossorigin="anonymous"></script>
