@@ -23,8 +23,10 @@ services:
       - app
   database:
     image: mysql:5.7
+    command:  "--innodb_use_native_aio=0"
     volumes:
       - ./db:/var/lib/mysql
+      - ./data/conf:/etc/mysql/conf.d
     environment:
       - "MYSQL_ALLOW_EMPTY_PASSWORD=yes"
       - "MYSQL_DATABASE=laravel"
