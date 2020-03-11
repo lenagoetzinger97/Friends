@@ -14,49 +14,88 @@
                         </div>
 
                     @endif
-
-                    <h3>Neues Event erstellen</h3>
-                    <div class="">
-                      <p>Lege neue Events an und teile der Welt mit, was bei dir cooles abgeht!</p>
-                      <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Event anlegen</a>
-                    </div>
-
-                    <h3>Aktuelle Events im Überblick</h3>
-                    <div class="">
-                      <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-
-                      <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-
-                      <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="text-center">
+                            <h3>Neues Event erstellen</h3>
+                            <p>Lege neue Events an und teile der Welt mit, was bei dir cooles abgeht!</p>
+                            <a href="#" class="btn btn-primary">Event anlegen</a>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <div class="container" style="padding-top: 10px;">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <h3>Aktuelle Events im Überblick</h3>
 
-                    <h3>Alle Matches</h3>
-                    <div class="">
+                          <div class="row" style="padding-top: 10px;">
+                            <div class="col-sm-6">
+                              <div class="card">
+                                <img src="{{ asset('photos/party.jpg') }}" class="card-img-top" alt="hier ist ein Bild">
+                                <div class="card-body">
+                                  <h5 class="card-title">Freitag, 13.03.2020</h5>
+                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-sm-6">
+                            <div class="card">
+                              <img src="{{ asset('photos/party.jpg') }}" class="card-img-top" alt="hier ist ein Bild">
+                              <div class="card-body">
+                                <h5 class="card-title">Dienstag, 17.03.2020</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
+                        <div class="row" style="padding-top: 10px;">
+                          <div class="col-sm-6">
+                            <div class="card">
+                              <img src="{{ asset('photos/party.jpg') }}" class="card-img-top" alt="hier ist ein Bild">
+                              <div class="card-body">
+                                <h5 class="card-title">Montag, 30.04.2020</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="col-sm-6">
+                          <div class="card">
+                            <img src="{{ asset('photos/party.jpg') }}" class="card-img-top" alt="hier ist ein Bild">
+                            <div class="card-body">
+                              <h5 class="card-title">Mittwoch, 02.05.2020</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row" style="padding-top: 10px;">
+                        <div class="col-sm-6">
+                          <div class="card">
+                            <img src="{{ asset('photos/party.jpg') }}" class="card-img-top" alt="hier ist ein Bild">
+                            <div class="card-body">
+                              <h5 class="card-title">Montag, 30.04.2020</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="col-sm-6">
+                        <div class="card">
+                          <img src="{{ asset('photos/party.jpg') }}" class="card-img-top" alt="hier ist ein Bild">
+                          <div class="card-body">
+                            <h5 class="card-title">Mittwoch, 02.05.2020</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
                     </div>
-                    <a class="btn btn-primary" href="">Mehr laden</a>
+
+                    </div>
                 </div>
             </div>
         </div>
