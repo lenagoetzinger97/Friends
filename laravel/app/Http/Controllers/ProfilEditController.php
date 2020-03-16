@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 <?php
 
 namespace App\Http\Controllers;
@@ -347,3 +349,4 @@ class ProfilEditController extends Controller
 
 
 }
+>>>>>>> parent of b47a5d5... Merge branch 'LenaF'
