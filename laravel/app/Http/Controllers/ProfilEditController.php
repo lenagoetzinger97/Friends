@@ -17,7 +17,7 @@ class ProfilEditController extends Controller
     public function index()
     {
         $aktivitaeten = DB::select('select * from aktivitaeten', [1]);
-        
+
         return view('profilEdit', ['aktivitaeten' => $aktivitaeten]);
         // return view('profilEdit');
     }
@@ -118,7 +118,7 @@ class ProfilEditController extends Controller
 
         }
 
-            
+
 
         // Name
         if(!empty($_POST['name'])) {
@@ -126,10 +126,10 @@ class ProfilEditController extends Controller
             DB::table('users')
                 ->where('id', $user_aktuell)
                 ->update(['name' => $name]);
-            
+
         }
 
-            
+
 
         // Alter
         if(!empty($_POST['alter'])) {
@@ -137,10 +137,10 @@ class ProfilEditController extends Controller
             DB::table('users')
                 ->where('id', $user_aktuell)
                 ->update(['alter' => $alter]);
-            
+
         }
 
-            
+
 
         // Ort
         if(!empty($_POST['ort'])) {
@@ -148,10 +148,10 @@ class ProfilEditController extends Controller
             DB::table('users')
                 ->where('id', $user_aktuell)
                 ->update(['name' => $ort]);
-            
+
         }
 
-            
+
 
     }
 
