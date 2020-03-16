@@ -17,15 +17,8 @@ class ProfilEditController extends Controller
     public function index()
     {
         $aktivitaeten = DB::select('select * from aktivitaeten', [1]);
-        $interests = DB::select('select * from interests', [1]);
-        $ceigenschaften = DB::select('select * from c_eigenschaft', [1]);
-        $musikgeschmaecker = DB::select('select * from musikgeschmack', [1]);
-        $urlaubstypen = DB::select('select * from urlaubstyp', [1]);
-        return view('profilEdit', ['aktivitaeten' => $aktivitaeten,
-                                   'interests' => $interests,
-                                   'ceigenschaften' => $ceigenschaften,
-                                   'musikgeschmaecker' => $musikgeschmaecker,
-                                   'urlaubstypen' => $urlaubstypen]);
+        
+        return view('profilEdit', ['aktivitaeten' => $aktivitaeten]);
         // return view('profilEdit');
     }
 
