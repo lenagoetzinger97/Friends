@@ -32,3 +32,4 @@ Route::get('/admin/createEvent', 'AdminController@createEvent');
 
 // User Routen
 Route::get('/userprofil', 'UserprofilController@index');
+Route::get('/useredit', 'UserprofileditController@index');

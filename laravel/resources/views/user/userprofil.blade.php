@@ -23,7 +23,7 @@
                             Alter | Wohnort
                         </div>
                         <div class="col-md-3">
-                            <a href="editprofile" class="edit-profile"><img src="https://static.thenounproject.com/png/33660-200.png" width="30"></a>
+                            <a href="useredit" class="edit-profil"><img src="https://static.thenounproject.com/png/33660-200.png" width="30"></a>
                         </div>
                     </div>
                   </br> </br>
