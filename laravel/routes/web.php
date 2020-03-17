@@ -23,6 +23,8 @@ Route::get('/admin/login','Auth\AdminLoginController@showLoginForm')->name('admi
 Route::post('/admin/login','Auth\AdminLoginController@login')->name('admin.login.submit');
 Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
 
+//vorrübergehende Route für Event erstellen
+Route::get('/admin/createEvent', 'AdminController@createEvent');
 
 
 

@@ -20,7 +20,7 @@
                           <div class="text-center">
                             <h3>Neues Event erstellen</h3>
                             <p>Lege neue Events an und teile der Welt mit, was bei dir cooles abgeht!</p>
-                            <a href="#" class="btn btn-primary">Event anlegen</a>
+                            <a href="/admin/createEvent" class="btn btn-primary">Event anlegen</a>
                           </div>
                         </div>
                       </div>
