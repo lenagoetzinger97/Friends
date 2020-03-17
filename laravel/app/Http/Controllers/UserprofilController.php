@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class UserprofilController extends Controller
 {
+
+  public function __construct()
+  {
+      $this->middleware('auth');
+  }
     /**
      * Display a listing of the resource.
      *
@@ -17,3 +22,4 @@ class UserprofilController extends Controller
     {
         return view('user.userprofil');
     }
+}
