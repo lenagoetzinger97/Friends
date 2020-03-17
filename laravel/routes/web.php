@@ -24,6 +24,8 @@ Route::post('/admin/login','Auth\AdminLoginController@login')->name('admin.login
 Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
 Route::get('/registrierungevent', 'FormularController@formular')->name('formular');
 
+//vorrübergehende Route für Event erstellen
+Route::get('/admin/createEvent', 'AdminController@createEvent');
 
 
 
