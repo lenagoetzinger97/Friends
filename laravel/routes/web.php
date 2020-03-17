@@ -27,4 +27,5 @@ Route::get('/registrierungevent', 'FormularController@formular')->name('formular
 
 
 
+
 // von Lena Frerichs hinzugefügt am 10.03.2020 14:11 Uhr: überarbeiten -> ohne Sinn / werden nur für benötigtes hinzugefügt
