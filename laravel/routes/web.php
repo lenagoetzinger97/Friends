@@ -19,6 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/',function(){return view('auth.admin-login');})->name('login.as.admin');
+
+//Event Routen
 Route::get('/admin/login','Auth\AdminLoginController@showLoginForm')->name('admin.login');
 Route::post('/admin/login','Auth\AdminLoginController@login')->name('admin.login.submit');
 Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
@@ -28,6 +30,5 @@ Route::get('/registrierungevent', 'FormularController@formular')->name('formular
 Route::get('/admin/createEvent', 'AdminController@createEvent');
 
 
-
-
-// von Lena Frerichs hinzugefügt am 10.03.2020 14:11 Uhr: überarbeiten -> ohne Sinn / werden nur für benötigtes hinzugefügt
+// User Routen
+Route::get('/userprofil', 'UserprofilController@index');
