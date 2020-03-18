@@ -18,9 +18,11 @@
                             <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4YpX3wpf0VlhoxvYamPEvfvPSaYXRMZAeXmNtAu-9c6Kwbosb&s'); background-position: center; width: 130px; height: 130px; border-radius: 100px;"></div>
                         </div>
                         <div class="col-md-6">
-                        </br></br>
+                        </br>
+                            {{ Auth::user()->benutzername }}</br>
                             {{ Auth::user()->name }}</br>
-                            Alter | Wohnort
+                            {{ Auth::user()->alter }} Jahre alt | {{ Auth::user()->ort }}
+
                         </div>
                         <div class="col-md-3">
                             <a href="useredit" class="edit-profil"><img src="https://static.thenounproject.com/png/33660-200.png" width="30"></a>

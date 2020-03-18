@@ -57,12 +57,12 @@
 
                         <!--Ort-->
                         <div class="form-group row">
-                            <label for="ort-ID" class="col-md-4 col-form-label text-md-right">{{ __('Wohnort') }}</label>
+                            <label for="ort" class="col-md-4 col-form-label text-md-right">{{ __('Wohnort') }}</label>
 
                             <div class="col-md-6">
-                                <input id="ort-ID" type="ort-ID" class="form-control @error('ort-ID') is-invalid @enderror" name="ort-ID" value="{{ old('ort-ID') }}" required autocomplete="ort-ID">
+                                <input id="ort" type="ort" class="form-control @error('ort') is-invalid @enderror" name="ort" value="{{ old('ort') }}" required autocomplete="ort">
 
-                                @error('ort-ID')
+                                @error('ort')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

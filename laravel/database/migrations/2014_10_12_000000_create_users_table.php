@@ -21,8 +21,7 @@ class CreateUsersTable extends Migration
           $table->string('email')->unique();
           $table->timestamp('email_verified_at')->nullable();
           $table->integer('alter');
-          $table->string('ort-ID');
-          // $table->integer('sichtbarkeit'); // neu
+          $table->string('ort');
           $table->rememberToken();
           $table->timestamps();
       });
