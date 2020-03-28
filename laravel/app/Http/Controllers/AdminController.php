@@ -26,8 +26,4 @@ class AdminController extends Controller
         return view('admin');
     }
 
-    public function createEvent()
-    {
-      return view ('admin_createEvent');
-    }
 }

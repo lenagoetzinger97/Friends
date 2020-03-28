@@ -27,7 +27,9 @@ Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
 Route::get('/registrierungevent', 'FormularController@formular')->name('formular');
 
 //vorrübergehende Route für Event erstellen
-Route::get('/admin/createEvent', 'AdminController@createEvent');
+Route::get('/admin/createEvent', 'EventsController@index');
+
+Route::post('/admin/createEvent', 'EventsController@store')->name('addEvent');
 
 
 // User Routen
