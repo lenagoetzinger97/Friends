@@ -32,17 +32,9 @@
                             <h2>Aktivities:</h2>
                             <div class="row">
                                 <div class="col-md-3">
-                                    <input type="checkbox" name="checkbox" value="mp3">Achterbahn<br> <!--online-->
+                                    <input type="checkbox" name="activity" value="Achterbahn"> Achterbahn<br>
                                 </div>
-                                <div class="col-md-3">
-                                    <input type="checkbox" name="schwimmen" value="102"> Schwimmen <!--alt-->
-                                </div>
-                                <div class="col-md-3">
-                                    <input type="checkbox" name="rutschen" value="103"> Rutschen (Wasser)
-                                </div>
-                                <div class="col-md-3">
-                                    <input type="checkbox" name="kartfahren" value="104"> Kart fahren
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -58,7 +50,7 @@
 
                     <div style="float: right">
                         <a class="btn btn-outline-secondary" href="/userprofil"></i> Abbrechen</a>
-                        <button type="submit" class="btn btn-outline-primary">Speichern</button>
+                        <button type="submit" name="submit" class="btn btn-outline-primary">Speichern</button>
                       </div>
                     </div>
 

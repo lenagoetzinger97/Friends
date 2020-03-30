@@ -28,21 +28,24 @@ class UserController extends Controller
         return view('user.useredit');
     }
 
+    public function event()
+    {
+        return view('user.eventshow');
+    }
 //neu
 
 
-    public function update(Request $request, User $user)
-    {
-      $request->validate([
-        'activity' => 'required',
-        'music' => 'required',
-      ]);
+public function store(Request $request)
+{
+  $edit = new Edit();
 
-      $user->update($request->all());
+  $edit->Achterbahn= $request->input('Achterbahn');
 
-      return redirect()->route('user.userprofil')
-                    ->with('success','Profil erfolgreich geändert');
-    }
+  $edit->save();
+  return view('useredit');
+
+
+}
 
 
 }

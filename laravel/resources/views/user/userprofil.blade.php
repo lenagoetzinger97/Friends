@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="col">
                             <h2>Aktivities:</h2>
-                            <span class="tag">Schwimmen</span>
+                            {{ Auth::user()->benutzername }}
                         </div>
                     </div>
 

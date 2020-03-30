@@ -15,8 +15,8 @@ class CreateActivityTable extends Migration
     {
         Schema::create('activity', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('bezeichnung');
             $table->timestamps();
+            $table->boolean('Achterbahn');
         });
     }
 
