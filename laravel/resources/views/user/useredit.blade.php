@@ -23,15 +23,27 @@
                           </br>
                           {{ Auth::user()->benutzername }}</br>
                           {{ Auth::user()->name }}</br>
-                          {{ Auth::user()->alter }} Jahre alt |
-                          {{ Auth::user()->ort }}
+                          {{ Auth::user()->alter }} Jahre alt | {{ Auth::user()->ort }}
                         </div>
                     </div>
                   </br> </br>
                     <div class="row">
                         <div class="col">
                             <h2>Aktivities:</h2>
-                            <span class="tag">Schwimmen</span>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <input type="checkbox" name="checkbox" value="mp3">Achterbahn<br> <!--online-->
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="checkbox" name="schwimmen" value="102"> Schwimmen <!--alt-->
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="checkbox" name="rutschen" value="103"> Rutschen (Wasser)
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="checkbox" name="kartfahren" value="104"> Kart fahren
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -42,6 +54,12 @@
                             <h2>Musics:</h2>
                             <span class="tag">Rock</span>
                         </div>
+                    </div>
+
+                    <div style="float: right">
+                        <a class="btn btn-outline-secondary" href="/userprofil"></i> Abbrechen</a>
+                        <button type="submit" class="btn btn-outline-primary">Speichern</button>
+                      </div>
                     </div>
 
                 </div>

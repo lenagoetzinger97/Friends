@@ -27,4 +27,22 @@ class UserController extends Controller
     {
         return view('user.useredit');
     }
+
+//neu
+
+
+    public function update(Request $request, Todo $todo)
+    {
+      $request->validate([
+        'activity' => 'required',
+        'music' => 'required',
+      ]);
+
+      $user->update($request->all());
+
+      return redirect()->route('user.userprofil')
+                    ->with('success','Profil erfolgreich geändert');
+    }
+
+
 }
