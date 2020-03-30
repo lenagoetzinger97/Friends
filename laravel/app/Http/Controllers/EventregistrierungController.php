@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\Storage;
 
 class EventregistrierungController extends Controller
 {
-    public function getFormular()
+    public function formular()
     {
         return view('registrierungevent');
     }
-    
+
 }

@@ -31,7 +31,7 @@ class UserController extends Controller
 //neu
 
 
-    public function update(Request $request, Todo $todo)
+    public function update(Request $request, User $user)
     {
       $request->validate([
         'activity' => 'required',
