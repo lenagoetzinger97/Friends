@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Profil;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -20,12 +21,20 @@ class UserController extends Controller
 
     public function index()
     {
-        return view('user.userprofil');
+        $allProfiles = Profil::all()->where('userId', Auth::user()->id)->last();
+        if(empty($allProfiles)){
+          return view('user.userprofil');
+        }
+        return view('user.userprofil')->with('profils', $allProfiles);
     }
 
     public function edit()
     {
-        return view('user.useredit');
+        $allProfiles = Profil::all()->where('userId', Auth::user()->id)->last();
+        if(empty($allProfiles)){
+          return view('user.useredit');
+        }
+        return view('user.useredit')->with('profils', $allProfiles);
     }
 
     public function event()

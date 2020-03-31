@@ -16,8 +16,15 @@ class CreateProfilTable extends Migration
         Schema::create('profils', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->Boolean('Schwimmen')->nullable();
-            $table->Boolean('Tanzen')->nullable();
+            $table->string('Schwimmen')->nullable();
+            $table->string('Tanzen')->nullable();
+            $table->string('Fitness')->nullable();
+            $table->string('Handball')->nullable();
+            $table->string('Klettern')->nullable();
+            $table->string('Minigolf')->nullable();
+            $table->string('Wandern')->nullable();
+            $table->string('Tennis')->nullable();
+            $table->Integer('userId');
         });
     }
 
