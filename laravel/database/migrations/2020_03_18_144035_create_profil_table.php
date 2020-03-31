@@ -13,7 +13,7 @@ class CreateProfilTable extends Migration
      */
     public function up()
     {
-        Schema::create('profil', function (Blueprint $table) {
+        Schema::create('profils', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
             $table->Boolean('Schwimmen')->nullable();
@@ -28,6 +28,6 @@ class CreateProfilTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profil');
+        Schema::dropIfExists('profils');
     }
 }

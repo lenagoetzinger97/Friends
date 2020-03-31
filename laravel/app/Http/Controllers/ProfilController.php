@@ -19,26 +19,25 @@ class ProfilController extends Controller
   }
 
 
-  public function store(Request $request)
+  public function add(Request $r)
   {
-    $profil = new Profil();
+    $profil = new Profil;
 
-    $request->profil => array(0 => "Schwimmen", 1 => "Tanzen")
+      if($r->schwimmen == "on"){
+        $profil->Schwimmen = true;
+      }
+      else{
+        $profil->Schwimmen = false;
+      }
+      if($r->tanzen == "on"){
+        $profil->Tanzen = true;
+      }
+      else{
+        $profil->Schwimmen = false;
+      }
 
-    $profil->save();
-    return view('user.userprofil')->with('profil',$profil);
+      $profil->save();
+      return view('userprofil')->with('profil' $profil);
   }
 
-  /*public function store(Request $request)
-  {
-    $profil = new Profil();
-
-    $profil->Schwimmen= $request->input('Schwimmen');
-
-
-    $profil->save();
-    return view('user.userprofil');
-
-
-  }*/
 }
