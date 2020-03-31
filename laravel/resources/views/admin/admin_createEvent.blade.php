@@ -20,7 +20,7 @@
                         <div class="col-sm-12">
                           <div class="text-center">
                             <h3>Neues Event erstellen</h3>
-                            <p>Lege neue Events an und teile der Welt mit, was bei dir cooles abgeht!</p>
+                            <p>Lege neue Events an und teile der Welt mit, was bei dir cooles abgeht! Hallo Hallo Ich bin ein Test!</p>
                             <a href="/admin" class="btn btn-primary">back</a>
                           </div>
                         </div>
