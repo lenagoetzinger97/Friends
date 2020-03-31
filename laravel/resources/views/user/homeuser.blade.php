@@ -74,18 +74,18 @@
                     <h3>Neueste Matches</h3>
                     <div class="neuesteMatches">
                         <div class="nm_card">
-                            <img src="../../images/garry-zhuang-71igRa6JOko-unsplash.jpg" class="match-pictures" width="100%">
+                            <img src="../../photos/garry-zhuang-71igRa6JOko-unsplash.jpg" class="match-pictures" width="100%">
                             <p class="nm_name">Walter Walterig</p>
                             <a class="btn btn-nm_card" href="">zu den Gemeinsamkeiten</a>
                         </div>
                         <div class="nm_card">
-                            <img src="../../images/people-walking-on-road-near-trees-at-daytime-photo-1076081.jpg" class="match-pictures" width="100%">
+                            <img src="../../photos/people-walking-on-road-near-trees-at-daytime-photo-1076081.jpg" class="match-pictures" width="100%">
                             <p class="nm_name">Walter Walterig</p>
                             <a class="btn btn-nm_card" href="">zu den Gemeinsamkeiten</a>
                         </div>
 
                         <div class="nm_card">
-                            <img src="../../images/clarisse-meyer-UISgcA0yLrA-unsplash.jpg" class="match-pictures" width="100%">
+                            <img src="../../photos/clarisse-meyer-UISgcA0yLrA-unsplash.jpg" class="match-pictures" width="100%">
                             <p class="nm_name">Walter Walterig</p>
                             <a class="btn btn-nm_card" href="">zu den Gemeinsamkeiten</a>
                         </div>
@@ -96,18 +96,18 @@
                     <h3>Neue Freunde finden</h3>
                     <div class="neuesteMatches">
                         <div class="nm_card">
-                            <img src="../../images/roller-coaster-1553336_1920.jpg" class="match-pictures" width="100%">
+                            <img src="../../photos/roller-coaster-1553336_1920.jpg" class="match-pictures" width="100%">
                             <p class="nm_name">Walter Walterig</p>
                             <a class="btn btn-nm_card" href="">zu den Gemeinsamkeiten</a>
                         </div>
                         <div class="nm_card">
-                            <img src="../../images/person-swimming-on-body-of-water-863988.jpg" class="match-pictures" width="100%">
+                            <img src="../../photos/person-swimming-on-body-of-water-863988.jpg" class="match-pictures" width="100%">
                             <p class="nm_name">Walter Walterig</p>
                             <a class="btn btn-nm_card" href="">zu den Gemeinsamkeiten</a>
                         </div>
 
                         <div class="nm_card">
-                            <img src="../../images/water-fun-1892553_1920.jpg" class="match-pictures" width="100%">
+                            <img src="../../photos/water-fun-1892553_1920.jpg" class="match-pictures" width="100%">
                             <p class="nm_name">Walter Walterig</p>
                             <a class="btn btn-nm_card" href="">zu den Gemeinsamkeiten</a>
                         </div>
@@ -133,12 +133,12 @@
 
                     <div class="neuesteMatches">
                         <div class="ue_card">
-                            <img src="../../images/garry-zhuang-71igRa6JOko-unsplash.jpg" class="match-pictures" width="100%">
+                            <img src="../../photos/garry-zhuang-71igRa6JOko-unsplash.jpg" class="match-pictures" width="100%">
                             <p class="nm_name">Montag, 30.03.2020</p>
                             Lorem ipsum dolor sit amet, consetetuer adipiscing elit. Aenan commodo ligula eget dolor.
                         </div>
                         <div class="ue_card">
-                            <img src="../../images/people-walking-on-road-near-trees-at-daytime-photo-1076081.jpg" class="match-pictures" width="100%">
+                            <img src="../../photos/people-walking-on-road-near-trees-at-daytime-photo-1076081.jpg" class="match-pictures" width="100%">
                             <p class="nm_name">Montag, 30.03.2020</p>
                             Lorem ipsum dolor sit amet, consetetuer adipiscing elit. Aenan commodo ligula eget dolor.
                         </div>
