@@ -9,7 +9,7 @@ class VeranstaltungsController extends Controller
 {
     public function index()
     {
-      return view ('admin_createEvent');
+      return view ('admin.admin_createEvent');
     }
 
     public function store(Request $request)
@@ -36,8 +36,19 @@ class VeranstaltungsController extends Controller
       }
 
       $veranstaltung->save();
-      return view('admin_createEvent')->with('veranstaltung',$veranstaltung);
+      return view('admin.admin_showcreatedEvent')->with('veranstaltung',$veranstaltung);
 
 
+    }
+    public function display()
+    {
+      $veranstaltungen = Veranstaltung::all();
+      return view ('admin.admin')->with('veranstaltungen',$veranstaltungen);
+    }
+
+
+    public function showOne()
+    {
+      return view ('admin.admin_showcreatedEvent');
     }
 }
