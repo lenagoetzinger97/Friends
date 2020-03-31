@@ -49,6 +49,36 @@
                           </div>
                         </div>
 
+                        <div class="row" style="padding-top: 10px;">
+                          <div class="col-sm-4">
+                            <div class="card">
+                              <img src="{{ asset('photos/Johannes.png') }}" class="card-img-top" alt="Johannes Kruppa" height="200">
+                              <div class="card-body">
+                                <h5 class="card-title">Johannes Kruppa</h5>
+                                <button type="button" class="btn btn-outline-primary">Gemeinsamkeiten entdecken</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card">
+                              <img src="{{ asset('photos/Marina.png') }}" class="card-img-top" alt="Marina Haag" height="200">
+                              <div class="card-body">
+                                <h5 class="card-title">Marina Haag</h5>
+                                <button type="button" class="btn btn-outline-primary">Gemeinsamkeiten entdecken</button>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <img src="{{ asset('photos/Lukas.png') }}" class="card-img-top" alt="Lukas Herkert" height="200">
+                            <div class="card-body">
+                              <h5 class="card-title">Lukas Herkert</h5>
+                              <button type="button" class="btn btn-outline-primary">Gemeinsamkeiten entdecken</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                       </div>
 
 

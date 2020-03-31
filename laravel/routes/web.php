@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/',function(){return view('auth.admin-login');})->name('login.as.admin');
 
 //Event Routen
@@ -32,9 +32,11 @@ Route::post('/admin/createEvent', 'VeranstaltungsController@store')->name('addEv
 
 
 // User Routen
-Route::get('/userprofil', 'UserController@index');
-Route::get('/useredit', 'UserController@edit');
-Route::get('/event', 'UserController@event');
-Route::get('/music', 'UserController@music');
-Route::get('/activity', 'UserController@activity');
-Route::get('/friends', 'UserController@friends');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/userprofil', 'UserController@index')->name('userprofil');
+Route::get('/useredit', 'UserController@edit')->name('useredit');
+Route::get('/event', 'UserController@event')->name('showevent');
+Route::get('/friends', 'UserController@friends')->name('friends');
+
+Route::get('/matches', 'ProfilController@profil');
+Route::post('/matches', 'ProfilController@store')->name('profil');

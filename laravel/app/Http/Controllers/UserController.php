@@ -33,36 +33,11 @@ class UserController extends Controller
         return view('user.eventshow');
     }
 
-    public function activity()
-    {
-        return view('user.activitymatch');
-    }
-
-    public function music()
-    {
-        return view('user.musicmatch');
-    }
-
     public function friends()
     {
         return view('user.friends');
     }
 
-//neu
-
-
-public function store(Request $request)
-{
-  $edit = new Edit();
-
-  $edit->Schwimmen= $request->input('Schwimmen');
-
-
-  $edit->save();
-  return view('userprofil')->with('edit',$edit);
-
-
-}
 
 
 }

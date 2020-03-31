@@ -32,7 +32,8 @@
                             <h2>Aktivities:</h2>
                             <div class="row">
                                 <div class="col-md-3">
-                                    <input type="checkbox" name="activity[]" value="Schwimmen"> Schwimmen <br/>
+                                    <input type="checkbox" name="profil[]" value="Schwimmen"> Schwimmen <br/>
+                                    <input type="checkbox" name="profil[]" value="Tanzen"> Tanzen<br/>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +50,7 @@
 
                     <div style="float: right">
                         <a class="btn btn-outline-secondary" href="/userprofil"></i> Abbrechen</a>
-                        <button type="submit" name="submit" class="btn btn-outline-primary">Speichern</button>
+                        <input type="submit" name="submit" value="Speichern"class="btn btn-outline-primary"></input>
                       </div>
                     </div>
 
