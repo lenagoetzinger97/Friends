@@ -35,3 +35,6 @@ Route::post('/admin/createEvent', 'VeranstaltungsController@store')->name('addEv
 Route::get('/userprofil', 'UserController@index');
 Route::get('/useredit', 'UserController@edit');
 Route::get('/event', 'UserController@event');
+Route::get('/music', 'UserController@music');
+Route::get('/activity', 'UserController@activity');
+Route::get('/friends', 'UserController@friends');

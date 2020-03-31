@@ -8,7 +8,7 @@ class Edit extends Model
 {
   protected $table = 'activity';
   protected $fillable = [
-    'Achterbahn',
+    'Schwimmen'
   ];
 
 }

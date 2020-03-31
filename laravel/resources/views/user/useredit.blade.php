@@ -12,7 +12,7 @@
                         </div>
                     @endif
 
-                    <form method="POST" action="/useredit">
+                    <form method="GET" action="/useredit">
                         @csrf
 
                     <div class="row">
@@ -32,9 +32,8 @@
                             <h2>Aktivities:</h2>
                             <div class="row">
                                 <div class="col-md-3">
-                                    <input type="checkbox" name="activity" value="Achterbahn"> Achterbahn<br>
+                                    <input type="checkbox" name="activity[]" value="Schwimmen"> Schwimmen <br/>
                                 </div>
-
                             </div>
                         </div>
                     </div>

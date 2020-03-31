@@ -45,13 +45,13 @@
                     @else
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ route('login') }}">{{ __('Activity Matches') }}</a>
+                          <a class="nav-link" href="{{ url('/activity') }}">{{ __('Activity Matches') }}</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ route('login') }}">{{ __('Music Matches') }}</a>
+                          <a class="nav-link" href="{{ url('/music') }}">{{ __('Music Matches') }}</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ route('login') }}">{{ __('Meine Freunde') }}</a>
+                          <a class="nav-link" href="{{ url('/friends') }}">{{ __('Meine Freunde') }}</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="{{ url('/event') }}">{{ __('Events') }}</a>
