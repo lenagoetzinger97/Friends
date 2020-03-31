@@ -45,16 +45,13 @@
                     @else
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ route('login') }}">{{ __('Activity Matches') }}</a>
+                          <a class="nav-link" href="{{ url('/matches') }}">{{ __('Matches') }}</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ route('login') }}">{{ __('Music Matches') }}</a>
+                          <a class="nav-link" href="{{ url('/friends') }}">{{ __('Meine Freunde') }}</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ route('login') }}">{{ __('Meine Freunde') }}</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="{{ route('login') }}">{{ __('Events') }}</a>
+                          <a class="nav-link" href="{{ url('/event') }}">{{ __('Events') }}</a>
                       </li>
                     </ul>
                   @endguest
@@ -78,6 +75,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class = "dropdown-item" href="{{ url('/userprofil') }}"> Mein Profil</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

@@ -12,7 +12,7 @@
                         </div>
                     @endif
 
-                    <form method="POST" action="/useredit">
+                    <form method="post" action="/useredit">
                         @csrf
 
                     <div class="row">
@@ -20,13 +20,45 @@
                             <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4YpX3wpf0VlhoxvYamPEvfvPSaYXRMZAeXmNtAu-9c6Kwbosb&s'); background-position: center; width: 130px; height: 130px; border-radius: 100px;"></div>
                         </div>
                         <div class="col-md-9">
-                            <input type="text" id="benutzername" name="benutzername" value="{{ Auth::user()->name }}" class="form-control" placeholder="Benutzername">
-                            <!-- benutzername überhaupt änderbar? -->
-                            <!--input type="text" id="name" name="name" value="{{ $user->vname }}" class="form-control" placeholder="Vorname Nachname"-->
-                            <input type="text" id="name" name="name" size="30" value="Vorname Nachname"><br>
-                            <!--input type="text" id="alter" name="alter" value="{{ $user->alter }}" class="form-control" placeholder="Wohnort"-->
-                            <input type="text" id="alter" name="alter" size="2" value="26"> <input type="text" id="ort" name="ort" size="30" value="Heilbronn">
+                          </br>
+                          {{ Auth::user()->benutzername }}</br>
+                          {{ Auth::user()->name }}</br>
+                          {{ Auth::user()->alter }} Jahre alt | {{ Auth::user()->ort }}
                         </div>
+                    </div>
+                  </br> </br>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Aktivities:</h2>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <input type="checkbox" id="1" name="profil">
+                                    <label for="1">Schwimmen </label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <input type="checkbox" id="2" name="profil">
+                                    <label for="2">Tanzen </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                  </br> </br>
+
+                    <div class="row">
+                        <div class="col">
+                            <h2>Musics:</h2>
+                            <span class="tag">Rock</span>
+                        </div>
+                    </div>
+
+                    <div style="float: right">
+                        <a class="btn btn-outline-secondary" href="/userprofil"></i> Abbrechen</a>
+                        <input type="submit" name="submit" value="Speichern"class="btn btn-outline-primary"></input>
+                      </div>
+                    </form>
                     </div>
 
                 </div>

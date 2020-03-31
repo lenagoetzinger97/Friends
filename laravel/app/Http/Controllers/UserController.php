@@ -27,4 +27,17 @@ class UserController extends Controller
     {
         return view('user.useredit');
     }
+
+    public function event()
+    {
+        return view('user.eventshow');
+    }
+
+    public function friends()
+    {
+        return view('user.friends');
+    }
+
+
+
 }
