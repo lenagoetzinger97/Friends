@@ -42,6 +42,7 @@
                             <p class="card-text">in {{$veranstaltung->Eventort}}</p>
                             <p class="card-text">{{$veranstaltung->Eventbeschreibung}}</p>
                             <a href="/admin/editEvent/{{$veranstaltung->id}}" class="btn btn-primary"> bearbeiten </a>
+                            <a href="/admin/deleteEvent/{{$veranstaltung->id}}"><i class="fas fa-trash-alt"></i></a>
                           </div>
                         </div>
                       </div>

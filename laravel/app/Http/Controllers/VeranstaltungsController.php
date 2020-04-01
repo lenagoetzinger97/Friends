@@ -78,6 +78,15 @@ class VeranstaltungsController extends Controller
       $veranstaltungen->save();
       return redirect('/admin')->with('veranstaltungen', $veranstaltungen);
     }
+
+    public function delete($id)
+    {
+        $veranstaltungen = Veranstaltung::find($id);
+        $veranstaltungen->delete();
+
+        return redirect('/admin')->with('veranstaltungen',$veranstaltungen);
+    }
+
     public function showOne()
     {
       return view ('admin.admin_showcreatedEvent');
