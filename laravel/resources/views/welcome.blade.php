@@ -78,28 +78,8 @@
                 <div>
                     <a href="{{ url('/registrierungevent') }}">Event Registrierung</a>
                 </div>
-<<<<<<< HEAD
-
-                  @if (Route::has('login'))
-                    <div class="links">
-                          @auth
-                              <a href="{{ url('/home') }}">Home</a>
-                          @else
-                              <a href="{{ route('login') }}">Login</a>
-                              <a href="{{ route('admin.login') }}">Event-Login</a>
-                              @if (Route::has('register'))
-                                  <a href="{{ route('register') }}">Registrierung</a>
-                                  <a href="{{ url('/registrierungevent') }}">Event Registrierung</a>
-                              @endif
-                          @endauth
-                      </div>
-                  @endif
-
-
-=======
                 @endif
                 @endauth
->>>>>>> 3136a8a5a2c5cc5ba75f1de3544ab04759f22489
             </div>
         </div>
         @endif
