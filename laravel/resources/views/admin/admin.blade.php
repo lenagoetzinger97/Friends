@@ -41,6 +41,7 @@
                             <p class="card-text">{{$veranstaltung->Eventtag}} um {{$veranstaltung->Eventuhrzeit}}</p>
                             <p class="card-text">in {{$veranstaltung->Eventort}}</p>
                             <p class="card-text">{{$veranstaltung->Eventbeschreibung}}</p>
+                            <a href="/admin/editEvent/{{$veranstaltung->id}}" class="btn btn-primary"> bearbeiten </a>
                           </div>
                         </div>
                       </div>

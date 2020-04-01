@@ -46,7 +46,38 @@ class VeranstaltungsController extends Controller
       return view ('admin.admin')->with('veranstaltungen',$veranstaltungen);
     }
 
+    public function edit($id)
+    {
+      $veranstaltungen = Veranstaltung::find($id);
+      return view('admin.admin_editEvent')->with('veranstaltungen', $veranstaltungen);
+    }
 
+    public function update(Request $request, $id)
+    {
+      $veranstaltungen = Veranstaltung::find($id);
+
+      $veranstaltungen->Eventname= $request->input('Eventname');
+      $veranstaltungen->Eventtag= $request->input('Eventtag');
+      $veranstaltungen->Eventuhrzeit= $request->input('Eventuhrzeit');
+      $veranstaltungen->Eventort= $request->input('Eventort');
+      $veranstaltungen->Eventveranstalter= $request->input('Eventveranstalter');
+      $veranstaltungen->Eventbeschreibung= $request->input('Eventbeschreibung');
+
+      if($request->hasfile('image'))
+      {
+        $file = $request->file('image');
+        $extension = $file->getClientOriginalExtension(); //getting image extension
+        $filename = time().".".$extension;
+        $file->move('uploads/eventFotos/',$filename);
+        $veranstaltungen->image = $filename;
+      }else{
+        return $request;
+        $veranstaltungen->image = "";
+      }
+
+      $veranstaltungen->save();
+      return redirect('/admin')->with('veranstaltungen', $veranstaltungen);
+    }
     public function showOne()
     {
       return view ('admin.admin_showcreatedEvent');
