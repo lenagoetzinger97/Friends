@@ -18,9 +18,9 @@
                         <div class="col-md-3">
 
                               @if(Auth::user()->imageUrl != null)
-                                <img src="{{Auth::user()->imageUrl}}" alt="Profil">
+                                <img src="{{Auth::user()->imageUrl}}" alt="Profil" width = "130px" height = "130px" border-radius = "100px" class="rounded-circle">
                                 @else
-                                <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="Profilbild Platzhalter" width: 130px; height: 130px; border-radius: 100px;">
+                                <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="Platzhalter" width = "130px" height = "130px" border-radius = "100px" class="rounded-circle">
                                 @endif
 
 

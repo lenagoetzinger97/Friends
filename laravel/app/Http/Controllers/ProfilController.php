@@ -116,8 +116,6 @@ class ProfilController extends Controller
             // mit ->with() habe ich dem View gewünschte Mitteilungen(Hier eine success-Meldung wenn es geklappt hat) übergeben
             return redirect('/userprofil')->with('success', 'Profilbild erfolgreich hochgeladen!');
 
-            //Seite wird geladen...
-
 
  //
             }
