@@ -12,13 +12,19 @@
                         </div>
                     @endif
 
-                    <form method="post" action="/useredit">
+                    <form method="post" action="/useredit" enctype="multipart/form-data">
                         @csrf
 
+                    <!--Profilbild hochladen-->
                     <div class="row">
                         <div class="col-md-3">
-                            <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4YpX3wpf0VlhoxvYamPEvfvPSaYXRMZAeXmNtAu-9c6Kwbosb&s'); background-position: center; width: 130px; height: 130px; border-radius: 100px;"></div>
+                           <div class="form-group">
+                            <label class="custom-file-label"> Füge ein Profilbild hinzu </label>
+                            <input type="file" name="image"  class="custom-file-input" value="">
+                          </div>
                         </div>
+
+                        <!--Infos aus registierung-->
                         <div class="col-md-9">
                           </br>
                           {{ Auth::user()->benutzername }}</br>
@@ -27,6 +33,8 @@
                         </div>
                     </div>
                   </br> </br>
+
+                  <!--Aktivitäten anzeigen (wenn in datenbank checked, dann ausgewählt anzeigen)-->
                     <div class="row">
                         <div class="col">
                             <h2>Aktivities:</h2>
@@ -109,16 +117,16 @@
                                               <label for="8">Tennis </label>
                                               @endif
                                             </div>
+                                      </div>
                                   </div>
-
-                            </div>
-                        </div>
+                              </div>
                             </br> </br>
+                                            <!--Speichen & Abbrechen Button-->
                                             <div style="float: right">
                                               <a class="btn btn-outline-secondary" href="/userprofil"></i> Abbrechen</a>
                                               <input type="submit" name="submit" value="Speichern"class="btn btn-outline-primary"></input>
                                             </div>
-                                </form>
+                                  </form>
                     </div>
                 </div>
             </div>

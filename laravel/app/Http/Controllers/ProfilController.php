@@ -79,10 +79,53 @@ class ProfilController extends Controller
       else{
         $profil->Tennis = 'false';
       }
-
       $profil->userid = Auth::user()->id;
       $profil->save();
-      return redirect('/userprofil');
-  }
+//
+      if($r->image != null){
+      $filename = $r->image;
+      $extension = $filename->getClientOriginalExtension();
+        //Validator
+      $arr_extensions=Array('jpeg', 'JPG', 'jpg', 'png', 'PNG');
+        foreach ($arr_extensions as $goodExtension) {
 
-}
+          if($goodExtension == $extension){
+
+            $user = Auth::user();
+            $userid = $user->id;
+
+            //$eingabe nimmt die hochgeladene Datei entgegnen
+            $eingabe = $r->image;
+
+            //schreibt den Namen der Datei in $filename
+            $filename = $eingabe->getClientOriginalName();
+
+            //gibt den Pfad für Speicherung des Bildes an (nicht public)
+            $file_path = public_path() . "/uploads/profilFotos/" .$filename;
+
+            $currentUser = Auth::user();
+            $currentUser->imageUrl = "/uploads/profilFotos/" .$filename;
+            $currentUser->save();
+
+            //wurde der "submit" Button geklickt wird die Datei in das gewünschte Verzeichnes geladen
+
+            move_uploaded_file($_FILES["image"]["tmp_name"], $file_path);
+
+
+            //Durch redirect wird man auf eine gewünschte Seite geleitet.
+            // mit ->with() habe ich dem View gewünschte Mitteilungen(Hier eine success-Meldung wenn es geklappt hat) übergeben
+            return redirect('/userprofil')->with('success', 'Profilbild erfolgreich hochgeladen!');
+
+            //Seite wird geladen...
+
+
+ //
+            }
+
+          return redirect('/userprofil');
+          }
+
+        }
+        return redirect('/userprofil')->with('success', 'Profil erfolgreich aktualisiert!');
+      }
+    }
