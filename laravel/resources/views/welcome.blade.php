@@ -78,7 +78,7 @@
                               <a href="{{ url('/home') }}">Home</a>
                           @else
                               <a href="{{ route('login') }}">Login</a>
-                              <a href="http://127.0.0.1:8080/admin/login">Event-Login</a>
+                              <a href="{{ route('admin.login') }}">Event-Login</a>
                               @if (Route::has('register'))
                                   <a href="{{ route('register') }}">Registrierung</a>
                                   <a href="{{ url('/registrierungevent') }}">Event Registrierung</a>
