@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Events</div>
+                <div class="card-header"><a href="/admin" class="btn btn-primary">back</a></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -19,9 +19,9 @@
                       <div class="row">
                         <div class="col-sm-12">
                           <div class="text-center">
-                            <h3>Neues Event erstellen</h3>
-                            <p>Lege neue Events an und teile der Welt mit, was bei dir cooles abgeht!</p>
-                            <a href="/admin" class="btn btn-primary">back</a>
+                            <h3>Event bearbeiten</h3>
+
+
                           </div>
                         </div>
                       </div>
@@ -33,44 +33,44 @@
 
 
 
-                            <form action="{{route('admin.dashboard')}}" method="post" enctype="multipart/form-data">
+                            <form action="/updateEvent/{{$veranstaltungen->id}}" method="post" enctype="multipart/form-data">
                               @csrf
-                              {{ method_field('PUT') }}
-
+                              {{method_field('PUT')}}
+                              <input type="hidden" name="id" id="id" value="{{$veranstaltungen->id}}">
                               <div class="form-group">
                                 <label>Veranstaltungsname</label>
-                                <input type="text" name="Eventname" id="Eventname" class="form-control" placeholder="Füge den Veranstaltungsnamen hinzu" value="{{$veranstaltung->Eventname}}">
+                                <input type="text" name="Eventname" class="form-control" value="{{$veranstaltungen->Eventname}}" placeholder="Füge den Veranstaltungsnamen hinzu">
                               </div>
                               <div class="form-group">
                                 <label>Veranstaltungstag</label>
-                                <input type="date" name="Eventtag" id="Eventtag" class="form-control" placeholder="Füge den Veranstaltungstag hinzu" value="{{$veranstaltung->Eventtag}}">
+                                <input type="date" name="Eventtag" class="form-control" value="{{$veranstaltungen->Eventtag}}" placeholder="Füge den Veranstaltungstag hinzu">
                               </div>
                               <div class="form-group">
                                 <label>Veranstaltungsuhrzeit</label>
-                                <input type="text" name="Eventuhrzeit" id="Eventuhrzeit" class="form-control" placeholder="Füge die Veranstaltungsuhrzeit hinzu" value="{{$veranstaltung->Eventuhrzeit}}">
+                                <input type="text" name="Eventuhrzeit" class="form-control" value="{{$veranstaltungen->Eventuhrzeit}}" placeholder="Füge die Veranstaltungsuhrzeit hinzu">
                               </div>
                               <div class="form-group">
                                 <label>Veranstaltungsort</label>
-                                <input type="text" name="Eventort" id="Eventort" class="form-control" placeholder="Füge den Veranstaltungsort hinzu" value="{{$veranstaltung->Eventort}}">
+                                <input type="text" name="Eventort" class="form-control" value="{{$veranstaltungen->Eventort}}" placeholder="Füge den Veranstaltungsort hinzu">
                               </div>
                               <div class="form-group">
                                 <label>Veranstalter</label>
-                                <input type="text" name="Eventveranstalter" id="Eventveranstalter" class="form-control" placeholder="Füge den Veranstalter hinzu" value="{{$veranstaltung->Eventveranstalter}}">
+                                <input type="text" name="Eventveranstalter"  class="form-control" value="{{$veranstaltungen->Eventveranstalter}}" placeholder="Füge den Veranstalter hinzu">
                               </div>
                               <div class="form-group">
                                 <label>Veranstaltungsbeschreibung</label>
-                                <input type="text" name="Eventbeschreibung" id="Eventbeschreibung" class="form-control" placeholder="Füge eine Veranstaltungsbeschreibung hinzu" value="{{$veranstaltung->Eventbeschreibung}}">
+                                <input type="text" name="Eventbeschreibung"  class="form-control" value="{{$veranstaltungen->Eventbeschreibung}}" placeholder="Füge eine Veranstaltungsbeschreibung hinzu">
                               </div>
 
                               <div class="input-group">
                                 <div class="custom-file">
-
-                                  <input type="file" name="image" id="image" class="custom-file-input" value="{{$veranstaltung->image}}">
+                                  
+                                  <input type="file" name="image"  class="custom-file-input" value="{{$veranstaltungen->image}}">
                                   <label class="custom-file-label"> Füge eine Bild hinzu </label>
                                 </div>
                               </div>
                               <div class="text-center" style="padding-top:10px">
-                                <button type="submit" name="submit" class="btn btn-primary"> Speichern </button>
+                                <button type="submit" name="submit" class="btn btn-primary"> Update </button>
                               </div>
                             </form>
                           </div>

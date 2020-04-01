@@ -33,6 +33,10 @@ Route::post('/admin/createEvent', 'VeranstaltungsController@store')->name('addEv
 Route::get('/admin/showEvent', 'VeranstaltungsController@showOne');
 Route::get('/admin','VeranstaltungsController@display')->name('eventHome');
 
+Route::get('/admin/editEvent/{id}','VeranstaltungsController@edit');
+Route::put('/updateEvent/{id}','VeranstaltungsController@update');
+Route::get('/admin/deleteEvent/{id}','VeranstaltungsController@delete'); 
+
 
 // User Routen
 Route::get('/home', 'HomeController@index')->name('home');
