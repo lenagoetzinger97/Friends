@@ -12,8 +12,10 @@
         <!-- Styles -->
         <style>
             html, body {
+                background-image: url(../photos/freunde.jpg);
+                background-size: auto 145%;
                 background-color: #000;
-                color: #636b6f;
+                color: #000000;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -21,7 +23,7 @@
             }
 
             .full-height {
-                height: 100vh;
+                height: 80vh;
             }
 
             .flex-center {
@@ -45,13 +47,13 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 94px;
             }
 
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 15px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -74,16 +76,24 @@
 
                   @if (Route::has('login'))
                     <div class="links">
-                          @auth
+                         @auth
                               <a href="{{ url('/home') }}">Home</a>
                           @else
-                              <a href="{{ route('login') }}">Login</a>
+                          <div
+                           <a href="{{ route('login') }}">Login</a>
+                         </div>
+                         <div
                               <a href="http://127.0.0.1:8080/admin/login">Event-Login</a>
                               @if (Route::has('register'))
+                            </div>
+                            <div
                                   <a href="{{ route('register') }}">Registrierung</a>
+                                </div>
+                                <div
                                   <a href="{{ route('register') }}">Event Registrierung</a>
                               @endif
                           @endauth
+                        </div>
                       </div>
                   @endif
 
