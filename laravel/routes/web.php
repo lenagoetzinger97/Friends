@@ -24,7 +24,8 @@ Auth::routes();
 Route::get('/admin/login','Auth\AdminLoginController@showLoginForm')->name('admin.login');
 Route::post('/admin/login','Auth\AdminLoginController@login')->name('admin.login.submit');
 Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
-Route::get('/registrierungevent', 'EventregistrierungController@formular');
+Route::get('/registrierungevent', 'EventregistrierungController@formular')->name('registrierungevent');
+Route::post('/registrierungevent/add', 'EventregistrierungController@add');
 
 //Event Routen
 
@@ -35,7 +36,7 @@ Route::get('/admin','VeranstaltungsController@display')->name('eventHome');
 
 Route::get('/admin/editEvent/{id}','VeranstaltungsController@edit');
 Route::put('/updateEvent/{id}','VeranstaltungsController@update');
-Route::get('/admin/deleteEvent/{id}','VeranstaltungsController@delete'); 
+Route::get('/admin/deleteEvent/{id}','VeranstaltungsController@delete');
 
 
 // User Routen

@@ -12,4 +12,5 @@ class EventregistrierungController extends Controller
         return view('registrierungevent');
     }
 
+  
 }
