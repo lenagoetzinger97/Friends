@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Events</div>
+                <div class="card-header"><a href="{{ route('home') }}"> <i class="fas fa-arrow-left"></i></a>Events</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -19,73 +19,25 @@
                         <div class="col-sm-12">
                           <h3>Aktuelle Events im Überblick</h3>
 
-                          <div class="row" style="padding-top: 10px;">
-                            <div class="col-sm-6">
+                          <div class="row">
+                            @foreach ($veranstaltungen as $veranstaltung)
+                            <div class="col-sm-6" style="padding-top: 10px;">
                               <div class="card">
-                                <img src="{{ asset('photos/party.jpg') }}" class="card-img-top" alt="hier ist ein Bild">
+                                <img src="{{ asset('uploads/eventFotos/' . $veranstaltung->image) }}" class="card-img-top" height="210px;" alt="hier ist ein Bild">
                                 <div class="card-body">
-                                  <h5 class="card-title">Freitag, 13.03.2020</h5>
-                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                  <h5 class="card-title">{{$veranstaltung->Eventname}}</h5>
+                                  <p class="card-text">{{$veranstaltung->Eventtag}} um {{$veranstaltung->Eventuhrzeit}}</p>
+                                  <p class="card-text">in {{$veranstaltung->Eventort}}</p>
+                                  <p class="card-text">{{$veranstaltung->Eventbeschreibung}}</p>
                                 </div>
                               </div>
                             </div>
-                          <div class="col-sm-6">
-                            <div class="card">
-                              <img src="{{ asset('photos/party.jpg') }}" class="card-img-top" alt="hier ist ein Bild">
-                              <div class="card-body">
-                                <h5 class="card-title">Dienstag, 17.03.2020</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              </div>
-                            </div>
+                            @endforeach
                           </div>
-                        </div>
 
-                        <div class="row" style="padding-top: 10px;">
-                          <div class="col-sm-6">
-                            <div class="card">
-                              <img src="{{ asset('photos/party.jpg') }}" class="card-img-top" alt="hier ist ein Bild">
-                              <div class="card-body">
-                                <h5 class="card-title">Montag, 30.04.2020</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              </div>
-                            </div>
-                          </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <img src="{{ asset('photos/party.jpg') }}" class="card-img-top" alt="hier ist ein Bild">
-                            <div class="card-body">
-                              <h5 class="card-title">Mittwoch, 02.05.2020</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row" style="padding-top: 10px;">
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <img src="{{ asset('photos/party.jpg') }}" class="card-img-top" alt="hier ist ein Bild">
-                            <div class="card-body">
-                              <h5 class="card-title">Montag, 30.04.2020</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                          </div>
-                        </div>
-                      <div class="col-sm-6">
-                        <div class="card">
-                          <img src="{{ asset('photos/party.jpg') }}" class="card-img-top" alt="hier ist ein Bild">
-                          <div class="card-body">
-                            <h5 class="card-title">Mittwoch, 02.05.2020</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          </div>
                         </div>
                       </div>
                     </div>
-
-                    </div>
-
-                    </div>
-                </div>
             </div>
         </div>
     </div>

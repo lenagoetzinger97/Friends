@@ -20,7 +20,7 @@
     }
 
     .nm_name {
-        padding: 10px 0px 0px 0px;
+        padding: 10px 10px 0px 0px;
     }
 
     .btn-nm_card {
@@ -50,7 +50,7 @@
         padding-left: 10px;
         padding-right: 10px;
         margin-right:10px;
-        text-align: left;
+
     }
     .ue_card:first-child {
         margin-bottom: 20px;
@@ -132,17 +132,25 @@
 
 
                     <div class="neuesteMatches">
-                        <div class="ue_card">
-                            <img src="../../photos/garry-zhuang-71igRa6JOko-unsplash.jpg" class="match-pictures" width="100%">
-                            <p class="nm_name">Montag, 30.03.2020</p>
-                            Lorem ipsum dolor sit amet, consetetuer adipiscing elit. Aenan commodo ligula eget dolor.
+
+                      @foreach ($veranstaltungen as $veranstaltung)
+
+                        <div class="card" style="margin-bottom:10px;">
+                          <img src="{{ asset('uploads/eventFotos/' . $veranstaltung->image) }}" class="card-img-top" width="100%"  alt="hier ist ein Bild">
+
+                            <h5 class="card-title" style="padding:5px 0px 0px 10px;">{{$veranstaltung->Eventname}}</h5>
+                            <div style="padding-left:10px;">
+                              <p>
+                                <i class="far fa-calendar-alt"></i>  {{$veranstaltung->Eventtag}} um {{$veranstaltung->Eventuhrzeit}}<br>
+                                <i class="fas fa-map-marker-alt"></i>  in {{$veranstaltung->Eventort}}
+                              </p>
+                              <p>{{$veranstaltung->Eventbeschreibung}}</p>
+                            </div>
                         </div>
-                        <div class="ue_card">
-                            <img src="../../photos/people-walking-on-road-near-trees-at-daytime-photo-1076081.jpg" class="match-pictures" width="100%">
-                            <p class="nm_name">Montag, 30.03.2020</p>
-                            Lorem ipsum dolor sit amet, consetetuer adipiscing elit. Aenan commodo ligula eget dolor.
-                        </div>
-                        <a class="btn btn-primary" href="">Mehr anzeigen</a>
+                        @break($veranstaltung->number == 1)
+                      @endforeach
+
+                        <a class="btn btn-primary" href="{{ url('/event') }}">Mehr anzeigen</a>
                     </div>
                 </div>
             </div>

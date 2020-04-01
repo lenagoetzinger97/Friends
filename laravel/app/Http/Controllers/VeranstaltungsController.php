@@ -46,6 +46,12 @@ class VeranstaltungsController extends Controller
       return view ('admin.admin')->with('veranstaltungen',$veranstaltungen);
     }
 
+    public function displayForUser()
+    {
+      $veranstaltungen = Veranstaltung::all();
+      return view ('user.eventshow')->with('veranstaltungen',$veranstaltungen);
+    }
+
     public function edit($id)
     {
       $veranstaltungen = Veranstaltung::find($id);
