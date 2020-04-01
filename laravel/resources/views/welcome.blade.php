@@ -81,7 +81,7 @@
                               <a href="http://127.0.0.1:8080/admin/login">Event-Login</a>
                               @if (Route::has('register'))
                                   <a href="{{ route('register') }}">Registrierung</a>
-                                  <a href="{{ url('/formular') }}">Event Registrierung</a>
+                                  <a href="{{ url('/registrierungevent') }}">Event Registrierung</a>
                               @endif
                           @endauth
                       </div>
