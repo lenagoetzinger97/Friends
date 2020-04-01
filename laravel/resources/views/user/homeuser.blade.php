@@ -147,7 +147,7 @@
                               <p>{{$veranstaltung->Eventbeschreibung}}</p>
                             </div>
                         </div>
-                        @break($veranstaltung->number == 1)
+                        
                       @endforeach
 
                         <a class="btn btn-primary" href="{{ url('/event') }}">Mehr anzeigen</a>

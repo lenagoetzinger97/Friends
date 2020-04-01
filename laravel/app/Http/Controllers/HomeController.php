@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $veranstaltungen = Veranstaltung::all();
+        $veranstaltungen = Veranstaltung::find([1,2]);
         return view('user.homeuser')->with('veranstaltungen',$veranstaltungen);
     }
 }
