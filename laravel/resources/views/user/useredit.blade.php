@@ -30,10 +30,9 @@
                     <div class="row">
                         <div class="col">
                             <h2>Aktivities:</h2>
-
                             <div class="row">
                                 <div class="col-md-3">
-                                  @if($profils->Schwimmen === 'true')
+                                  @if(!empty($profils) && $profils->Schwimmen === 'true')
                                     <input type="checkbox" id="1" name="Schwimmen" checked>
                                     <label for="1">Schwimmen </label>
                                   @else
@@ -43,7 +42,7 @@
                                 </div>
 
                                 <div class="col-md-3">
-                                  @if($profils->Tanzen === 'true')
+                                  @if(!empty($profils) && $profils->Tanzen === 'true')
                                     <input type="checkbox" id="2" name="Tanzen" checked>
                                     <label for="2">Tanzen </label>
                                   @else
@@ -53,7 +52,7 @@
                                 </div>
 
                                   <div class="col-md-3">
-                                    @if($profils->Fitness === 'true')
+                                    @if(!empty($profils) && $profils->Fitness === 'true')
                                       <input type="checkbox" id="3" name="Fitness" checked>
                                       <label for="3">Fitness </label>
                                     @else
@@ -63,7 +62,7 @@
                                   </div>
 
                                     <div class="col-md-3">
-                                      @if($profils->Handball === 'true')
+                                      @if(!empty($profils) && $profils->Handball === 'true')
                                         <input type="checkbox" id="4" name="Handball" checked>
                                         <label for="4">Handball </label>
                                       @else
@@ -73,7 +72,7 @@
                                     </div>
 
                                       <div class="col-md-3">
-                                        @if($profils->Klettern === 'true')
+                                        @if(!empty($profils) && $profils->Klettern === 'true')
                                           <input type="checkbox" id="5" name="Klettern" checked>
                                           <label for="5">Klettern </label>
                                         @else
@@ -83,7 +82,7 @@
                                       </div>
 
                                         <div class="col-md-3">
-                                          @if($profils->Minigolf === 'true')
+                                          @if(!empty($profils) && $profils->Minigolf === 'true')
                                             <input type="checkbox" id="6" name="Minigolf" checked>
                                             <label for="6">Minigolf </label>
                                           @else
@@ -93,7 +92,7 @@
                                         </div>
 
                                           <div class="col-md-3">
-                                            @if($profils->Wandern === 'true')
+                                            @if(!empty($profils) && $profils->Wandern === 'true')
                                               <input type="checkbox" id="7" name="Wandern" checked>
                                               <label for="7">Wandern </label>
                                             @else
@@ -102,7 +101,7 @@
                                             @endif
                                           </div>
                                             <div class="col-md-3">
-                                              @if($profils->Tennis === 'true')
+                                              @if(!empty($profils) && $profils->Tennis === 'true')
                                                 <input type="checkbox" id="8" name="Tennis" checked>
                                                 <label for="8">Tennis </label>
                                               @else
@@ -111,6 +110,7 @@
                                               @endif
                                             </div>
                                   </div>
+
                             </div>
                         </div>
                             </br> </br>
