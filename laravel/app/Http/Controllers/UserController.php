@@ -24,6 +24,7 @@ class UserController extends Controller
         $allProfiles = Profil::all()->where('userId', Auth::user()->id)->last();
         if(empty($allProfiles)){
           return view('user.userprofil');
+
         }
         return view('user.userprofil')->with('profils', $allProfiles);
     }

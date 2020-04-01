@@ -12,13 +12,16 @@
                         </div>
                     @endif
 
-                    <form method="post" action="/useredit">
+                    <form method="post" action="/useredit" enctype="multipart/form-data">
                         @csrf
 
                     <div class="row">
+                      
                         <div class="col-md-3">
-                            <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4YpX3wpf0VlhoxvYamPEvfvPSaYXRMZAeXmNtAu-9c6Kwbosb&s'); background-position: center; width: 130px; height: 130px; border-radius: 100px;"></div>
+                            <input type="file" name="image"  class="custom-file-input" value="">
+                            <label class="custom-file-label"> Füge ein Profilbild hinzu </label>
                         </div>
+
                         <div class="col-md-9">
                           </br>
                           {{ Auth::user()->benutzername }}</br>
