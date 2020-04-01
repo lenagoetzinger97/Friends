@@ -88,9 +88,13 @@
                             </div>
                             <div
                                   <a href="{{ route('register') }}">Registrierung</a>
+<<<<<<< HEAD
                                 </div>
                                 <div
                                   <a href="{{ route('register') }}">Event Registrierung</a>
+=======
+                                  <a href="{{ url('/registrierungevent') }}">Event Registrierung</a>
+>>>>>>> 6ab06c13e633c51ef656d1e3beba1cc6e6a5cd75
                               @endif
                           @endauth
                         </div>
