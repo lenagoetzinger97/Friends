@@ -44,6 +44,6 @@ Route::get('/userprofil', 'UserController@index')->name('userprofil');
 Route::get('/useredit', 'UserController@edit');
 Route::post('/useredit', 'ProfilController@add')->name('useredit');
 
-Route::get('/event', 'UserController@event')->name('showevent');
+Route::get('/event', 'VeranstaltungsController@displayForUser')->name('showevent');
 Route::get('/friends', 'UserController@friends')->name('friends');
 Route::get('/matches', 'ProfilController@profil');
