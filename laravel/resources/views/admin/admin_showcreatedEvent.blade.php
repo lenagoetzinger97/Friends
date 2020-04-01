@@ -25,7 +25,7 @@
 
                         <div class="col-sm-4">
                           <div class="text-right">
-                            <i class="far fa-edit"></i><a> Bearbeiten </a>
+                            <a href="/admin/editEvent/{{$veranstaltung->id}}"> <i class="far fa-edit"></i> Bearbeiten </a>
                           </div>
                         </div>
                       </div>

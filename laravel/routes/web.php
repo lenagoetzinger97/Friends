@@ -17,8 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-//Route::get('/home', 'HomeController@index')->name('home');
-//Route::get('/',function(){return view('auth.admin-login');})->name('login.as.admin');
+
 
 //Event Routen - Admin login
 Route::get('/admin/login','Auth\AdminLoginController@showLoginForm')->name('admin.login');
@@ -34,7 +33,7 @@ Route::get('/admin/showEvent', 'VeranstaltungsController@showOne');
 Route::get('/admin','VeranstaltungsController@display')->name('eventHome');
 
 Route::get('/admin/editEvent/{id}','VeranstaltungsController@edit');
-Route::put('/updateEvent/{id}','VeranstaltungsController@update');
+Route::put('/admin/updateEvent/{id}','VeranstaltungsController@update');
 Route::get('/admin/deleteEvent/{id}','VeranstaltungsController@delete');
 
 
