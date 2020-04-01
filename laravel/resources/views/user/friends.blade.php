@@ -18,7 +18,6 @@
                       <div class="row">
                         <div class="col-sm-12">
                           <h3>Meine Freunde</h3>
-
                           <div class="row" style="padding-top: 10px;">
                             <div class="col-sm-4">
                               <div class="card">
@@ -49,7 +48,7 @@
                           </div>
                         </div>
 
-                        <div class="row" style="padding-top: 10px;">
+                        <div class="row" style="padding-top: 20px;">
                           <div class="col-sm-4">
                             <div class="card">
                               <img src="{{ asset('photos/Johannes.png') }}" class="card-img-top" alt="Johannes Kruppa" height="200">
@@ -77,17 +76,12 @@
                             </div>
                           </div>
                         </div>
-                      </div>
-
-                      </div>
-
-
-
                     </div>
-
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
     </div>
 </div>

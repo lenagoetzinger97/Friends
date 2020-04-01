@@ -64,7 +64,7 @@
 
                               <div class="input-group">
                                 <div class="custom-file">
-                                  
+
                                   <input type="file" name="image"  class="custom-file-input" value="{{$veranstaltungen->image}}">
                                   <label class="custom-file-label"> Füge eine Bild hinzu </label>
                                 </div>
