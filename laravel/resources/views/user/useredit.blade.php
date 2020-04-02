@@ -18,7 +18,7 @@
                     <div class="row">
 
                         <div class="col-md-3">
-                            <input type="file" name="image"  class="custom-file-input" value="">
+                            <input type="file" name="image"  class="custom-file-input" accept=".png, .jpg, .jpeg, .gif" value="">
                             <label class="custom-file-label">Profilbild</label>
                         </div>
 

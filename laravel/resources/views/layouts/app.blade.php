@@ -42,6 +42,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -117,7 +118,9 @@
     </div>
 </body>
 <!-- Footer -->
-<footer class="page-footer font-small fixed-bottom" style="background: rgba(280,280,280,0.8);">
+<footer class="page-footer font-small" style="background: rgba(280,280,280,0.8); position: relative; 
+  width: 100%;
+  height: 150px;">
   <div class="footer-copyright text-center py-3">
   Datenschutz </br>
   Impressum</br>
