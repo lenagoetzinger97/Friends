@@ -148,8 +148,8 @@
                       </div>
 
                     </div>
-                    <div class="text-center" style="padding-top:10px">
-                      <button type="button" class="btn btn-warning"> mehr Freunde finden </button>
+                    <div class="text-center" style="padding-top:10px"> </br>
+                      <button type="button" class="btn btn-dark"> mehr Freunde finden </button>
                     </div>
                 </div>
             </div>
@@ -187,8 +187,8 @@
                         </div>
 
                       @endforeach
-                      <div class="text-center" style="padding-top:10px">
-                        <a class="btn btn-warning" href="{{ url('/event') }}">Mehr anzeigen</a>
+                      <div class="text-center" style="padding-top:10px"> </br>
+                        <a class="btn btn-dark" href="{{ url('/event') }}">Mehr anzeigen</a>
                       </div>
                     </div>
                 </div>
