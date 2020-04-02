@@ -21,7 +21,7 @@
                           <div class="row" style="padding-top: 10px">
                             <div class="col-sm-4">
                               <div class="card">
-                                <img src="{{ asset('photos/Carolin.png') }}" class="card-img-top" alt="Carolin Müller" height="400">
+                                <img src="{{ asset('photos/Carolin.png') }}" class="card-img-top" alt="Carolin Müller" height="200">
                                 <div class="card-body">
                                   <h5 class="card-title" style="text-align:center;">Carolin Müller</h5>
                                   <button type="button" class="btn btn-outline-dark">Gemeinsamkeiten entdecken</button>
@@ -30,7 +30,7 @@
                             </div>
                           <div class="col-sm-4">
                             <div class="card">
-                              <img src="{{ asset('photos/Nina.png') }}" class="card-img-top" alt="Nina Schröder" height="400">
+                              <img src="{{ asset('photos/Nina.png') }}" class="card-img-top" alt="Nina Schröder" height="200">
                               <div class="card-body">
                                 <h5 class="card-title" style="text-align:center;">Nina Schröder</h5>
                                 <button type="button" class="btn btn-outline-dark">Gemeinsamkeiten entdecken</button>
@@ -39,7 +39,7 @@
                           </div>
                           <div class="col-sm-4">
                             <div class="card">
-                              <img src="{{ asset('photos/Nico.png') }}" class="card-img-top" alt="Nico Fischer" height="400">
+                              <img src="{{ asset('photos/Nico.png') }}" class="card-img-top" alt="Nico Fischer" height="200">
                               <div class="card-body">
                                 <h5 class="card-title" style="text-align:center;">Nico Fischer</h5>
                                 <button type="button" class="btn btn-outline-dark">Gemeinsamkeiten entdecken</button>
@@ -60,7 +60,7 @@
                           </div>
                           <div class="col-sm-4">
                             <div class="card">
-                              <img src="{{ asset('photos/Marina.png') }}" class="card-img-top" alt="Marina Haag" height="400">
+                              <img src="{{ asset('photos/Marina.png') }}" class="card-img-top" alt="Marina Haag" height="200">
                               <div class="card-body">
                                 <h5 class="card-title" style="text-align:center;">Marina Haag</h5>
                                 <button type="button" class="btn btn-outline-dark">Gemeinsamkeiten entdecken</button>
@@ -69,7 +69,7 @@
                           </div>
                         <div class="col-sm-4">
                           <div class="card">
-                            <img src="{{ asset('photos/Lukas.png') }}" class="card-img-top" alt="Lukas Herkert" height="400">
+                            <img src="{{ asset('photos/Lukas.png') }}" class="card-img-top" alt="Lukas Herkert" height="200">
                             <div class="card-body">
                               <h5 class="card-title" style="text-align:center;">Lukas Herkert</h5>
                               <button type="button" class="btn btn-outline-dark">Gemeinsamkeiten entdecken</button>

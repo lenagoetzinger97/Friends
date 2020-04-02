@@ -116,4 +116,16 @@
         </main>
     </div>
 </body>
+<!-- Footer -->
+<footer class="page-footer font-small fixed-bottom" style="background: rgba(280,280,280,0.8);">
+  <div class="footer-copyright text-center py-3">
+  Datenschutz </br>
+  Impressum</br>
+  Kontakt
+</div>
+    <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: Maximilian Acker, Lena Frerichs, Lena Götzinger, Kim Wehnes
+  </div>
+</footer>
+<!-- Footer -->
 </html>

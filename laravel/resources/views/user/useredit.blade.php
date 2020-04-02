@@ -32,7 +32,7 @@
                   </br> </br>
                     <div class="row">
                         <div class="col">
-                            <h2>Aktivities:</h2>
+                            <h2>Wähle aus was du gerne machst:</h2> </br>
                             <div class="row">
                                 <div class="col-md-3">
                                   @if(!empty($profils) && $profils->Schwimmen === 'true')
@@ -119,7 +119,7 @@
                             </br> </br>
                                             <div style="float: right">
                                               <a class="btn btn-outline-secondary" href="/userprofil"></i> Abbrechen</a>
-                                              <input type="submit" name="submit" value="Speichern"class="btn btn-outline-primary"></input>
+                                              <input type="submit" name="submit" value="Speichern"class="btn btn-dark"></input>
                                             </div>
                                 </form>
                     </div>
