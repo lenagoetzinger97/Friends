@@ -70,48 +70,86 @@
                         </div>
 
                     @endif
-
-                    <h3>Neueste Matches</h3>
-                    <div class="neuesteMatches">
-                        <div class="nm_card">
-                            <img src="../../photos/garry-zhuang-71igRa6JOko-unsplash.jpg" class="match-pictures" width="100%">
-                            <p class="nm_name">Walter Walterig</p>
-                            <a class="btn btn-nm_card" href="">zu den Gemeinsamkeiten</a>
-                        </div>
-                        <div class="nm_card">
-                            <img src="../../photos/people-walking-on-road-near-trees-at-daytime-photo-1076081.jpg" class="match-pictures" width="100%">
-                            <p class="nm_name">Walter Walterig</p>
-                            <a class="btn btn-nm_card" href="">zu den Gemeinsamkeiten</a>
-                        </div>
-
-                        <div class="nm_card">
-                            <img src="../../photos/clarisse-meyer-UISgcA0yLrA-unsplash.jpg" class="match-pictures" width="100%">
-                            <p class="nm_name">Walter Walterig</p>
-                            <a class="btn btn-nm_card" href="">zu den Gemeinsamkeiten</a>
-                        </div>
-                        <a class="btn btn-primary" href="">Mehr anzeigen</a>
-                    </div>
-
-
                     <h3>Neue Freunde finden</h3>
-                    <div class="neuesteMatches">
-                        <div class="nm_card">
-                            <img src="../../photos/roller-coaster-1553336_1920.jpg" class="match-pictures" width="100%">
-                            <p class="nm_name">Walter Walterig</p>
-                            <a class="btn btn-nm_card" href="">zu den Gemeinsamkeiten</a>
-                        </div>
-                        <div class="nm_card">
-                            <img src="../../photos/person-swimming-on-body-of-water-863988.jpg" class="match-pictures" width="100%">
-                            <p class="nm_name">Walter Walterig</p>
-                            <a class="btn btn-nm_card" href="">zu den Gemeinsamkeiten</a>
-                        </div>
+                    <div class="row">
 
-                        <div class="nm_card">
-                            <img src="../../photos/water-fun-1892553_1920.jpg" class="match-pictures" width="100%">
-                            <p class="nm_name">Walter Walterig</p>
-                            <a class="btn btn-nm_card" href="">zu den Gemeinsamkeiten</a>
+                      <div class="col-sm-4" style="padding-top: 10px;">
+                        <div class="card">
+                          <img src="/photos/Harry.jpg" class="card-img-top" height="210px;" alt="hier ist ein Bild">
+                          <div class="card-body">
+                            <h5 class="card-title">Harry</h5>
+                            <p class="card-text">23 Jahre alt | Mannheim</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Wandern </button>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Fitness </button>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Tennis </button>
+                          </div>
                         </div>
-                        <a class="btn btn-primary" href="">Mehr anzeigen</a>
+                      </div>
+
+                      <div class="col-sm-4" style="padding-top: 10px;">
+                        <div class="card">
+                          <img src="/photos/Marina.png" class="card-img-top" height="210px;" alt="hier ist ein Bild">
+                          <div class="card-body">
+                            <h5 class="card-title">Marina</h5>
+                            <p class="card-text">20 Jahre alt | Sinsheim</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Fitness </button>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Tanzen </button>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Klettern </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4" style="padding-top: 10px;">
+                        <div class="card">
+                          <img src="/photos/Lukas.png" class="card-img-top" height="210px;" alt="hier ist ein Bild">
+                          <div class="card-body">
+                            <h5 class="card-title">Lukas</h5>
+                            <p class="card-text">26 Jahre alt | Heilbronn</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Handball </button>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Tennis </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4" style="padding-top: 10px;">
+                        <div class="card">
+                          <img src="/photos/Nina.png" class="card-img-top" height="210px;" alt="hier ist ein Bild">
+                          <div class="card-body">
+                            <h5 class="card-title">Nina</h5>
+                            <p class="card-text">22 Jahre alt | Heilbronn</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Tanzen </button>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Fitness </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4" style="padding-top: 10px;">
+                        <div class="card">
+                          <img src="/photos/Carla.jpg" class="card-img-top" height="210px;" alt="hier ist ein Bild">
+                          <div class="card-body">
+                            <h5 class="card-title">Carla</h5>
+                            <p class="card-text">19 Jahre alt | Nürnburg</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Wandern </button>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Minigolf </button>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Tennis </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4" style="padding-top: 10px;">
+                        <div class="card">
+                          <img src="/photos/Nico.png" class="card-img-top" height="210px;" alt="hier ist ein Bild">
+                          <div class="card-body">
+                            <h5 class="card-title">Nico</h5>
+                            <p class="card-text">23 Jahre alt | Heidelberg</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Schwimmen </button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="text-center" style="padding-top:10px">
+                      <button type="button" class="btn btn-warning"> mehr Freunde finden </button>
                     </div>
                 </div>
             </div>
@@ -149,8 +187,9 @@
                         </div>
 
                       @endforeach
-
+                      <div class="text-center" style="padding-top:10px">
                         <a class="btn btn-warning" href="{{ url('/event') }}">Mehr anzeigen</a>
+                      </div>
                     </div>
                 </div>
             </div>
