@@ -44,30 +44,30 @@
                               @if(!empty($profils))
 
                                 @if($profils->Schwimmen === 'true')
-                                  <button type="button" class="btn btn-primary">Schwimmen</button>
+                                  <button type="button" class="btn btn-dark">Schwimmen</button>
                                 @endif
                                 @if($profils->Tanzen === 'true')
-                                  <button type="button" class="btn btn-primary">Tanzen</button>
+                                  <button type="button" class="btn btn-dark">Tanzen</button>
                                 @endif
                                 @if($profils->Fitness === 'true')
-                                  <button type="button" class="btn btn-primary">Fitness</button>
+                                  <button type="button" class="btn btn-dark">Fitness</button>
                                 @endif
                                 @if($profils->Handball === 'true')
-                                  <button type="button" class="btn btn-primary">Handball</button> </br></br>
+                                  <button type="button" class="btn btn-dark">Handball</button> </br></br>
                                 @endif
                                 @if($profils->Klettern === 'true')
-                                  <button type="button" class="btn btn-primary">Klettern</button>
+                                  <button type="button" class="btn btn-dark">Klettern</button>
                                 @endif
                                 @if($profils->Minigolf === 'true')
-                                  <button type="button" class="btn btn-primary">Minigolf</button>
+                                  <button type="button" class="btn btn-dark">Minigolf</button>
                                 @endif
                                 @if($profils->Wandern === 'true')
-                                  <button type="button" class="btn btn-primary">Wandern</button>
+                                  <button type="button" class="btn btn-dark">Wandern</button>
                                 @endif
                                 @if($profils->Tennis === 'true')
-                                  <button type="button" class="btn btn-primary">Tennis</button>
+                                  <button type="button" class="btn btn-dark">Tennis</button>
                                 @endif
-
+                              </br></br>
                               @endif
                               <td></td>
                             </tr>
