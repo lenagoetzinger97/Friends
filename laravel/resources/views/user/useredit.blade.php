@@ -16,10 +16,10 @@
                         @csrf
 
                     <div class="row">
-                      
+
                         <div class="col-md-3">
                             <input type="file" name="image"  class="custom-file-input" value="">
-                            <label class="custom-file-label"> Füge ein Profilbild hinzu </label>
+                            <label class="custom-file-label">Profilbild</label>
                         </div>
 
                         <div class="col-md-9">

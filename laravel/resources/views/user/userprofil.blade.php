@@ -27,45 +27,45 @@
                         </div>
                         <div class="col-md-6">
                         </br>
-                            {{ Auth::user()->benutzername }}</br>
-                            {{ Auth::user()->name }}</br>
-                            {{ Auth::user()->alter }} Jahre alt | {{ Auth::user()->ort }}
+                          <i>  {{ Auth::user()->benutzername }}</br> </i>
+                          <h3>  {{ Auth::user()->name }}</h3>
+                          <h4>  {{ Auth::user()->alter }} Jahre alt  | {{ Auth::user()->ort }} </h4>
 
                         </div>
-                        <div class="col-md-3">
-                            <a href="useredit" class="edit-profil"><img src="https://static.thenounproject.com/png/33660-200.png" width="30"></a>
+                        <div class="col-md-3"> </br>
+                            <a href="useredit" class="edit-profil"><img src="https://image.flaticon.com/icons/svg/159/159843.svg" width="30"></a>
                         </div>
                     </div>
-                  </br> </br>
+                  </br> </br></br>
                     <div class="row">
-                        <div class="col">
-                            <h2>Aktivities:</h2>
+                        <div class="col" style="text-align:center;">
+                            <h2>Was ich gerne mache:</h2> </br>
                             <tr>
                               @if(!empty($profils))
 
                                 @if($profils->Schwimmen === 'true')
-                                  <h1><span class="badge badge-secondary">Schwimmen</span></h1>
+                                  <button type="button" class="btn btn-primary">Schwimmen</button>
                                 @endif
                                 @if($profils->Tanzen === 'true')
-                                  <h1><span class="badge badge-secondary">Tanzen</span></h1>
+                                  <button type="button" class="btn btn-primary">Tanzen</button>
                                 @endif
                                 @if($profils->Fitness === 'true')
-                                  <h1><span class="badge badge-secondary">Fitness</span></h1>
+                                  <button type="button" class="btn btn-primary">Fitness</button>
                                 @endif
                                 @if($profils->Handball === 'true')
-                                  <h1><span class="badge badge-secondary">Handball</span></h1>
+                                  <button type="button" class="btn btn-primary">Handball</button> </br></br>
                                 @endif
                                 @if($profils->Klettern === 'true')
-                                  <h1><span class="badge badge-secondary">Klettern</span></h1>
+                                  <button type="button" class="btn btn-primary">Klettern</button>
                                 @endif
                                 @if($profils->Minigolf === 'true')
-                                  <h1><span class="badge badge-secondary">Minigolf</span></h1>
+                                  <button type="button" class="btn btn-primary">Minigolf</button>
                                 @endif
                                 @if($profils->Wandern === 'true')
-                                  <h1><span class="badge badge-secondary">Wandern</span></h1>
+                                  <button type="button" class="btn btn-primary">Wandern</button>
                                 @endif
                                 @if($profils->Tennis === 'true')
-                                  <h1><span class="badge badge-secondary">Tennis</span></h1>
+                                  <button type="button" class="btn btn-primary">Tennis</button>
                                 @endif
 
                               @endif
