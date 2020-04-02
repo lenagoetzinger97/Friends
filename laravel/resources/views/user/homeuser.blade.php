@@ -147,10 +147,10 @@
                               <p>{{$veranstaltung->Eventbeschreibung}}</p>
                             </div>
                         </div>
-                        
+
                       @endforeach
 
-                        <a class="btn btn-primary" href="{{ url('/event') }}">Mehr anzeigen</a>
+                        <a class="btn btn-warning" href="{{ url('/event') }}">Mehr anzeigen</a>
                     </div>
                 </div>
             </div>

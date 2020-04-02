@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"> <a href="{{ route('eventHome') }}"> <i class="fas fa-arrow-left"></i></a></div>
+                <div class="card-header"> <a href="{{ route('eventHome') }}" style="color:#202224;"> <i class="fas fa-arrow-left"></i></a></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -25,7 +25,7 @@
 
                         <div class="col-sm-4">
                           <div class="text-right">
-                            <a href="/admin/editEvent/{{$veranstaltung->id}}"> <i class="far fa-edit"></i> Bearbeiten </a>
+                            <a href="/admin/editEvent/{{$veranstaltung->id}}"style="color:#202224;"> <i class="far fa-edit"></i> Bearbeiten </a>
                           </div>
                         </div>
                       </div>

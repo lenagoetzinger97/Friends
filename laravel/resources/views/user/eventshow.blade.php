@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><a href="{{ route('home') }}"> <i class="fas fa-arrow-left"></i></a>Events</div>
+                <div class="card-header"><a href="{{ route('home') }}" style="color:#202224;"> <i class="fas fa-arrow-left"></i></a></div>
 
                 <div class="card-body">
                     @if (session('status'))

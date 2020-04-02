@@ -115,3 +115,9 @@ h4 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+a {
+  color: #202224;
+  text-decoration: none;
+  background-color: transparent;
+}
