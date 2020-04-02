@@ -15,7 +15,7 @@
         height: 100vh;
         margin: 0;
     }
-</style>    
+</style>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
