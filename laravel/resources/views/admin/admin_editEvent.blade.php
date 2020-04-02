@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><a href="/admin" class="btn btn-primary">back</a></div>
+                <div class="card-header"><a href="/admin" style="color:#202224;"> <i class="fas fa-arrow-left"> </i></a></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -70,7 +70,7 @@
                                 </div>
                               </div>
                               <div class="text-center" style="padding-top:10px">
-                                <button type="submit" name="submit" class="btn btn-primary"> Update </button>
+                                <button type="submit" name="submit" class="btn btn-warning"> Update </button>
                               </div>
                             </form>
                           </div>

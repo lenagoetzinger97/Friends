@@ -20,7 +20,7 @@
                     <div class="text-center">
                       <h3>Neues Event erstellen</h3>
                       <p>Lege neue Events an und teile der Welt mit, was bei dir cooles abgeht!</p>
-                      <a href="/admin/createEvent" class="btn btn-primary">Event anlegen</a>
+                      <a href="/admin/createEvent" class="btn btn-warning">Event anlegen</a>
                     </div>
                   </div>
                 </div>
@@ -41,8 +41,12 @@
                             <p class="card-text">{{$veranstaltung->Eventtag}} um {{$veranstaltung->Eventuhrzeit}}</p>
                             <p class="card-text">in {{$veranstaltung->Eventort}}</p>
                             <p class="card-text">{{$veranstaltung->Eventbeschreibung}}</p>
-                            <a href="/admin/editEvent/{{$veranstaltung->id}}" class="btn btn-primary"> bearbeiten </a>
-                            <a href="/admin/deleteEvent/{{$veranstaltung->id}}"><i class="fas fa-trash-alt"></i></a>
+
+                            <a href="/admin/editEvent/{{$veranstaltung->id}}" class="btn btn-outline-dark btn-sm"> bearbeiten </a>
+
+                            <a href="/admin/deleteEvent/{{$veranstaltung->id}}" style="color:#ba0000;"><i class="fas fa-trash-alt" style="float:right"></i></a>
+
+
                           </div>
                         </div>
                       </div>

@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Events</div>
+                <div class="card-header"><a href="/admin" style="color:#202224;"><i class="fas fa-arrow-left"> </i></a></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -20,8 +20,9 @@
                         <div class="col-sm-12">
                           <div class="text-center">
                             <h3>Neues Event erstellen</h3>
-                            <p>Lege neue Events an und teile der Welt mit, was bei dir cooles abgeht! Hallo Hallo Ich bin ein Test!</p>
-                            <a href="/admin" class="btn btn-primary">back</a>
+                            <p>Hier kannst du nun ein neues Event anlegen, um so für die Leute in dener Umgebung sichtbar zu werden! Denn nur wer von einer Party weiß, kann zu ihr kommen! <br>
+                            WICHTIG!: Du MUSST ein Bild hochladen.</p>
+
                           </div>
                         </div>
                       </div>
@@ -65,7 +66,7 @@
                                 </div>
                               </div>
                               <div class="text-center" style="padding-top:10px">
-                                <button type="submit" name="submit" class="btn btn-primary"> Speichern </button>
+                                <button type="submit" name="submit" class="btn btn-warning"> Speichern </button>
                               </div>
                             </form>
                           </div>
