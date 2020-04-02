@@ -51,7 +51,7 @@
                         <div class="row" style="padding-top: 20px">
                           <div class="col-sm-4">
                             <div class="card">
-                              <img src="{{ asset('photos/Johannes.png') }}" class="card-img-top" alt="Johannes Kruppa" height="400">
+                              <img src="{{ asset('photos/Johannes.png') }}" class="card-img-top" alt="Johannes Kruppa" height="200">
                               <div class="card-body">
                                 <h5 class="card-title" style="text-align:center;">Johannes Kruppa</h5>
                                 <button type="button" class="btn btn-outline-dark">Gemeinsamkeiten entdecken</button>
