@@ -106,7 +106,6 @@
                             <h5 class="card-title">Lukas</h5>
                             <p class="card-text">26 Jahre alt | Heilbronn</p>
                             <button type="button" class="btn btn-outline-dark btn-sm disabled"> Handball </button>
-                            <button type="button" class="btn btn-outline-dark btn-sm disabled"> Schwimmen </button>
                             <button type="button" class="btn btn-outline-dark btn-sm disabled"> Tennis </button>
                           </div>
                         </div>
