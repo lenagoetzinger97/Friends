@@ -49,7 +49,7 @@
                               </div>
                             </div>
                             <div class="text-center" style="padding-top:10px">
-                              <button type="submit" name="submit" class="btn btn-dark"> Einverstanden </button>
+                              <a href="/admin" class="btn btn-dark"> Einverstanden </a>
                             </div>
                           </div>
                       </div>
