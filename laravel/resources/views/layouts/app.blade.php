@@ -39,7 +39,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+
     <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
 
@@ -118,7 +120,7 @@
     </div>
 </body>
 <!-- Footer -->
-<footer class="page-footer font-small" style="background: rgba(280,280,280,0.8); position: relative;
+<footer class="page-footer font-small" style="background: rgba(280,280,280,0.8); position: absolute; bottom: 0;
   width: 100%;
   height: 150px;">
   <div class="footer-copyright text-center py-3">

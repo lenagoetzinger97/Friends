@@ -16,7 +16,7 @@
 
                     <div class="row">
                         <div class="col-md-3">
- 
+
                               @if(Auth::user()->imageUrl != null)
                                 <img src="{{Auth::user()->imageUrl}}" alt="Profil" width="130px" height="130px" border-radius="100px" class="rounded-circle">
                                 @else
