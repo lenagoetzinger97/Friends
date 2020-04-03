@@ -30,7 +30,7 @@ Route::get('/registrierungevent', 'EventregistrierungController@formular');
 Route::get('/admin/createEvent', 'VeranstaltungsController@index')->name('createEvent');
 Route::post('/admin/createEvent', 'VeranstaltungsController@store')->name('addEvent');
 Route::get('/admin/showEvent', 'VeranstaltungsController@showOne');
-Route::get('/admin','VeranstaltungsController@display')->name('eventHome');
+Route::get('/admin','AdminController@index')->name('eventHome');
 
 Route::get('/admin/editEvent/{id}','VeranstaltungsController@edit');
 Route::put('/updateEvent/{id}','VeranstaltungsController@update');

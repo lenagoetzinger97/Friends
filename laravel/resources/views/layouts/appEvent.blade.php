@@ -39,7 +39,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('/public/css/app.css') }}" rel="stylesheet">
 </head>
 <body>
 
@@ -57,18 +57,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <!-- Left Side Of Navbar -->
-                    @guest
-                    @else
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item">
-                          <a class="nav-link" href="{{ url('/friends') }}">{{ __('Meine Freunde') }}</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="{{ url('/event') }}">{{ __('Events') }}</a>
-                      </li>
-                    </ul>
-                  @endguest
+
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -91,7 +80,6 @@
                                 </a>
 
                                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                      <a class = "dropdown-item" href="{{ url('/userprofil') }}"> Mein Profil</a>
                                       <a class="dropdown-item" href="{{ route('logout') }}"
                                          onclick="event.preventDefault();
                                                        document.getElementById('logout-form').submit();">

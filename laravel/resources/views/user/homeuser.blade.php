@@ -61,7 +61,7 @@
     <div class="row justify-content-center">
         <div class="col-md-9">
             <div class="card">
-                <div class="card-header">Matches</div>
+                <div class="card-header">Activitys</div>
 
                 <div class="card-body">
                     @if (session('status'))

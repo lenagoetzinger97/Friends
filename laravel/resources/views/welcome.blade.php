@@ -59,7 +59,7 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-                Matches
+                Activitys
             </div>
             @if (Route::has('login'))
             <div class="links">

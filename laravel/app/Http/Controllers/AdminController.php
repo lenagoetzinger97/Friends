@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Veranstaltung;
 
 class AdminController extends Controller
 {
@@ -23,7 +24,9 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin.admin');
+
+      $veranstaltungen = Veranstaltung::all();
+      return view ('admin.admin')->with('veranstaltungen',$veranstaltungen);  
     }
 
 

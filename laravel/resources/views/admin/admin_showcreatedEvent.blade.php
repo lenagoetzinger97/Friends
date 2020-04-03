@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appEvent')
 
 @section('content')
 <div class="container">
@@ -45,8 +45,10 @@
                                   <p class="card-text"> Veranstalter: {{$veranstaltung->Eventveranstalter}}</p>
 
                                 </div>
+
                               </div>
                             </div>
+                            <a href="/admin" class="btn btn-dark"> Einverstanden </a>
                           </div>
                       </div>
                     </div>

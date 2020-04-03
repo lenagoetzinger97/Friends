@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appEvent')
 
 @section('content')
 <div class="container">
@@ -66,7 +66,8 @@
                                 </div>
                               </div>
                               <div class="text-center" style="padding-top:10px">
-                                <button type="submit" name="submit" class="btn btn-warning"> Speichern </button>
+                                <a href="/admin" class="btn btn-outline-dark"> Abbrechen </a>
+                                <button type="submit" name="submit" class="btn btn-dark"> Speichern </button>
                               </div>
                             </form>
                           </div>
