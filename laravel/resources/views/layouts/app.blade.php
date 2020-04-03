@@ -127,7 +127,7 @@
   Kontakt
 </div>
     <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright: Maximilian Acker, Lena Götzinger, Kim Wehnes, Lena Frerichs
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: Maximilian Acker, Lena Götzinger, Kim Wehnes
   </div>
 </footer>
 <!-- Footer -->
