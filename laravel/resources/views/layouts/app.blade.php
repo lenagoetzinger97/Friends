@@ -120,7 +120,6 @@
     </div>
 </body>
 <!-- Footer -->
-<footer class="page-footer font-small" style="background: rgba(280,280,280,0.8); position: absolute; bottom: 0;
 
 <footer class="page-footer font-small" style="background: rgba(280,280,280,0.8); position: relative; bottom: 0;
   width: 100%;
